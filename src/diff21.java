@@ -13,25 +13,29 @@ public class diff21 {
 	
 	public static void main(String [] args){
 		
+	int result = 0;
+		
 	Scanner scan = new Scanner(System.in);
 	System.out.println("Please enter a number ");
 	int numb = scan.nextInt();
 	
-	n=differ21 (numb);
-	
+	result = differ21 (numb);
+	System.out.println("The result is: " + result);	
 	}//main
 
-public int differ21(int n) {
+public static int differ21(int n) {
 		if (n>21)
 			{
 			n= ((n-21 )* 2);
+			System.out.println("Your number is greater than 21: ");
 			}
 		else 
 			{
 			n = n - 21;
 			n = n - (n+n);
+			System.out.println("Your number is less than 21: ");
 			}
-return n;
+return (n);
 
 	}//diff21
 }//class
